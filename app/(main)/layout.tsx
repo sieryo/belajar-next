@@ -13,7 +13,7 @@ export default function MainLayout({
                 <AsideUtama />
             </div>
             <div>
-
+                {children}
             </div>
         </div>
     )

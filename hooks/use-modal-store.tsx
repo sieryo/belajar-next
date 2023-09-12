@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-export type ModalType = "Modal1" | "Modal2" | "Modal3"
+export type ModalType = "Modal1" | "Modal2" | "Modal3" | "Modal4"
 
 interface ModalData {
     data?: string

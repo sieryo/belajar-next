@@ -1,9 +1,10 @@
 import { ModalProvider } from '@/components/providers/modal-provider'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { cn } from '@/lib/utils'
+import { mainFont } from '@/lib/fonts'
+import {myFont} from '@/lib/fonts'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn(mainFont.className, "overflow-x-hidden font-normal")}>
         <ModalProvider />
         {children}
       </body>

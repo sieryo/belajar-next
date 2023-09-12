@@ -3,7 +3,7 @@
 
 import {useState} from 'react'
 import { useModal } from '@/hooks/use-modal-store';
-import { Database } from 'lucide-react';
+import { Clipboard, Database } from 'lucide-react';
 
 export const NavigationItem = () => {
   const {onOpen} = useModal()
@@ -19,6 +19,14 @@ export const NavigationItem = () => {
         onClick={() => onOpen("Modal2", { data })}
         className="w-[60px] h-[60px] rounded-full bg-slate-200 mt-3 cursor-pointer transition-all hover:bg-slate-600 flex flex-col justify-center items-center text-cyan-800 hover:text-yellow-50"
       ><Database /></div>
+      <div
+        onClick={() => onOpen("Modal3", { data })}
+        className="w-[60px] h-[60px] rounded-full bg-slate-200 mt-3 cursor-pointer transition-all hover:bg-slate-600 flex flex-col justify-center items-center text-cyan-800 hover:text-yellow-50"
+      ><Clipboard /></div>
+      <div
+        onClick={() => onOpen("Modal4", { data })}
+        className="w-[60px] h-[60px] rounded-full bg-slate-200 mt-3 cursor-pointer transition-all hover:bg-slate-600 flex flex-col justify-center items-center text-cyan-800 hover:text-yellow-50"
+      ><Clipboard /></div>
     </div>
   );
 };
