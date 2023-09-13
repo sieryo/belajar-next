@@ -6,7 +6,7 @@ export default function PageLayout({
 ){
     return (
       <>
-        <nav className="z-10 fixed w-full h-[80px] backdrop-blur-sm border-b-[1px] bg-slate-700/20 border-slate-400/50">
+        <nav className="z-[100] fixed w-full h-[80px] backdrop-blur-sm border-b-[1px] bg-slate-700/20 border-slate-400/50">
             <NavbarBuset />
         </nav>
         <div className="w-full h-full bg-zinc-800">

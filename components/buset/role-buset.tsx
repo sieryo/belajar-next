@@ -17,8 +17,8 @@ export const RoleBuset = ({
 }) => {
     
   return (
-    <div className="w-[100px] h-[100px] group flex flex-col items-center  mb-[200px]">
-      <div className="flex flex-col group items-center cursor-pointer">
+    <div className="w-[100px]  h-[100px] group flex flex-col items-center  mb-[200px]">
+      <div className="flex flex-col  group items-center cursor-pointer">
         <img
           className={cn(
             "w-[60px] object-cover grayscale h-[60px] group-hover:-translate-y-4 transition-all group-hover:grayscale-0",

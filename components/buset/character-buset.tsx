@@ -7,7 +7,7 @@ export const CharacterBuset = (
       skinName
 } : {imageUrl : string, heroName : string, skinName : string}) => {
     return (
-      <div className="w-full  h-[550px] flex justify-end items-center flex-col drop-shadow-assassin ">
+      <div className="w-full  h-[550px] flex justify-end items-center flex-col drop-shadow-map">
         <img
           className={cn(
             " object-contain scale-[100%] transition-all",

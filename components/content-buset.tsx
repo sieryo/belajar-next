@@ -20,9 +20,11 @@ export const ContentBuset = () => {
 
     if (isActive !== roleName) {
       setLoading(true);
-      setIsActive(roleName);
-      setHeroName(heroName)
-      setSkinName(skinName)
+      setTimeout(() => {
+        setIsActive(roleName);
+        setHeroName(heroName);
+        setSkinName(skinName);
+      },300)
       setTimeout(() => {
         setLoading((loading) => !loading);
       }, 500);
@@ -54,8 +56,8 @@ export const ContentBuset = () => {
       </div>
       <div className="w-full h-[1000px] text-white   flex flex-col justify-center items-center lg:flex-row">
         <div className="w-[100%] lg:w-[1100px]">
-          <div className="lg:w-[800px] w-[100%] h-[100px]  relative  flex flex-col justify-center">
-            <div className={cn("flex  justify-around mt-[80px]", myFont.className)}>
+          <div className="lg:w-[800px] w-[100%] h-[100px] pb-[150px]    relative  flex flex-col justify-center">
+            <div className={cn("flex  justify-around h-[140px]", myFont.className)}>
               <div
                 onClick={() => handleActive("ASSASSIN", "LING", "Cyan Finch")}
               >
@@ -114,7 +116,8 @@ export const ContentBuset = () => {
                 />
               </div>
             </div>
-            <Separator className="bg-gray-500 absolute z-[1]" />
+            <Separator className="bg-gray-500 top-[40px]  absolute z-[1]" />
+            <div></div>
           </div>
         </div>
         <div className="w-[400px] h-[400px] md:mr-[50px] lg:w-[750px] lg:h-[750px]  text-black">
@@ -127,8 +130,8 @@ export const ContentBuset = () => {
             ></div>
             <div
               className={cn(
-                "opacity-100 animate-fade-in transition-colors flex flex-col items-center",
-                loading && "opacity-0 "
+                "opacity-100 animate-fade-in transition-all flex flex-col items-center",
+                loading && " brightness-0 -translate-y-2 "
               )}
             >
               <CharacterBuset

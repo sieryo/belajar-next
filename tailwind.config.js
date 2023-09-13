@@ -17,7 +17,8 @@ module.exports = {
     },
     extend: {
       dropShadow: {
-        "assassin": "4px 2px 8px #4f4f4f"
+        "assassin": "4px 2px 8px #334155",
+        "map": "4px 2px 8px #334155"
       },
       colors: {
         border: "hsl(var(--border))",
@@ -80,7 +81,7 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        'fade-in': "fade-in 1s ease-in-out",
+        'fade-in': "fade-in 1s ease-in-out forwards",
 
         'fade-out': "fade-out 1s ease-in-out",
       },
