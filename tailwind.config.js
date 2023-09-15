@@ -77,12 +77,18 @@ module.exports = {
           "0%": { opacity: '100%' },
           "100%": { opacity: '0%' },
         },
+        'buset' : {
+          "0%": { clipPath: "polygon(0 0, 100% 0, 100% 100%, 100% 0)" },
+          "25%": { clipPath: "polygon(0 0, 100% 0, 100% 100%, 100% 0)" },
+          "50%": { clipPath: "polygon(0 0, 0 83%, 100% 100%, 0% 100%)", opacity: "50%", filter: "blur(2px)" },
+          "100%": { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)", opacity: "100%", filter: "blur(0px)" },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         'fade-in': "fade-in 1s ease-in-out forwards",
-
+        'hello' : "buset 2s " ,
         'fade-out': "fade-out 1s ease-in-out",
       },
     },

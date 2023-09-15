@@ -86,7 +86,14 @@ html,body,:root{
   --tw-clip-polygon-d: 0 100%;
   --tw-clip-polygon-e: 0% 50%
   }
-
+  .buset{
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+     clip-path: polygon(0% 0%, 200% 0%, 0% 200%);
+    animation-fill-mode: forwards;
+    animation-delay: 1000ms;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+  }
   .clip.polygon.a-3 {
     --tw-clip-polygon-a: 25% 0;
   }
